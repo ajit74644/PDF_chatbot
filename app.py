@@ -8,7 +8,7 @@ from docx import Document
 from google import genai
 
 # Connect to Gemini
-api_key = os.getenv("GEMINI_API_KEY")
+api_key = st.secrets.get("GEMINI_API_KEY")
 
 # Create our webpage
 st.title("My AI Document Chatbot")
